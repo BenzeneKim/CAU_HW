@@ -1,0 +1,14 @@
+Quiz6 Task 2
+
+(1) [1, 'a', 3, [4, 5], 'b', 'k']
+(2) [1, 'a', 3, 1, 'a', 3]
+(3) False
+
+Quiz6 Task 3
+
+NAME:  Gildong
+AGE:  30
+ADDR:  Mapogu Seoul
+NAME:  name
+AGE:  age
+ADDR:  address
