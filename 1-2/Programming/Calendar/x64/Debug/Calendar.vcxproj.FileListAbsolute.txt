@@ -1,0 +1,2 @@
+F:\CAU_HW\1-2\Programming\Calendar\x64\Debug\Calendar.exe
+F:\CAU_HW\1-2\Programming\Calendar\x64\Debug\Calendar.pdb

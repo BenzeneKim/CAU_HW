@@ -1,0 +1,16 @@
+﻿  Screen.c
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(34,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(35,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(37,2): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(38,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(45,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(63,47): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(62,3): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(78,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(82,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(88,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(92,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(105,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(135,38): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+F:\CAU_HW\1-2\Programming\Calendar\Screen.c(141,46): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  Calendar.vcxproj -> F:\CAU_HW\1-2\Programming\Calendar\x64\Debug\Calendar.exe

@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CalendarBase.cpp">
+    <ClCompile Include="CalendarBase.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Schedule.cpp">
+    <ClCompile Include="Schedule.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Screen.cpp">
+    <ClCompile Include="Screen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

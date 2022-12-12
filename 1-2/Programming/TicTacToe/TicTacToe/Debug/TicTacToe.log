@@ -1,0 +1,7 @@
+﻿  main.c
+F:\CAU_HW\1-2\Programming\TicTacToe\TicTacToe\main.c(130,18): warning C4013: 'kbhit' undefined; assuming extern returning int
+F:\CAU_HW\1-2\Programming\TicTacToe\TicTacToe\main.c(131,31): warning C4013: 'getch' undefined; assuming extern returning int
+F:\CAU_HW\1-2\Programming\TicTacToe\TicTacToe\main.c(274,21): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+F:\CAU_HW\1-2\Programming\TicTacToe\TicTacToe\main.c(421,20): warning C4098: 'Smart': 'void' function returning a value
+F:\CAU_HW\1-2\Programming\TicTacToe\TicTacToe\main.c(508,20): warning C4098: 'Smarter': 'void' function returning a value
+  TicTacToe.vcxproj -> F:\CAU_HW\1-2\Programming\TicTacToe\Debug\TicTacToe.exe

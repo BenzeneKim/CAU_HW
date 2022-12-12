@@ -1,12 +1,11 @@
 #pragma once
-#include<stdio.h>  
-#include<conio.h>  
-#include<windows.h>  
-#include<time.h>
+#include <stdio.h>  
+#include <conio.h>  
+#include <Windows.h>  
+#include <time.h>
+#include "main.h"
 
-int CalculateMaxDate(int year, int month);
-int CalculateStartDay(int year, int month);
-
-int CalculateDate() {
-	return 31;
-}
+Day CalcDay(Day dayToCalculate);
+int IsLeapYear(int year);
+int CalculateMaxDate(Day pointingDay);
+int CalculateStartWDay(Day pointingDay);
