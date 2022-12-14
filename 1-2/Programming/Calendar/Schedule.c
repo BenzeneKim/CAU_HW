@@ -55,8 +55,8 @@ void GetSchedule(Schedule* scheduleArr) {
 				scheduleArr[scheduleInd].pointingDay.year=itoa(year);
 				scheduleArr[scheduleInd].pointingDay.month=itoa(month);
 				scheduleArr[scheduleInd].pointingDay.date=itoa(date);
-				scheduleArr[scheduleInd].hour=itoa(hour);
-				scheduleArr[scheduleInd].minute=itoa(minute);
+				scheduleArr[scheduleInd].time.tm_hour=itoa(hour);
+				scheduleArr[scheduleInd].time.tm_minute=itoa(minute);
 				fgets(txtBuffer,10000,fpR);
 				scheduleArr[scheduleArr].contents=(char*)calloc(strlen(txtBuffer),sizeof(char*));
 				strcpy(scheduleArr[scheduleArr].contents,txtBuffer);
