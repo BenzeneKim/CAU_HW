@@ -4,6 +4,7 @@
 #include "main.h"
 #include "Screen.h"
 #include "CalendarBase.h"
+#include "Schedule.h"
 
 #define CALENDAR_X 20
 #define CALENDAR_Y 20
@@ -12,6 +13,7 @@ extern CONSOLE_SCREEN_BUFFER_INFO csbi;
 
 const char MonthTxt[][4] = { "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" };
 
+extern Schedule ScheduleData[100];
 termS termSize;
 
 void View(Day ViewDay) {
@@ -20,6 +22,7 @@ void View(Day ViewDay) {
 	ViewTitle(ViewDay);
 	ViewDayIndex();
 	ViewDate(ViewDay);
+	ViewSchedule(ViewDay);
 }
 
 void ViewInit() {
@@ -74,34 +77,38 @@ void ViewDate(Day viewDay) {
 
 void ViewTemplate() {
 	char* buffer;
-	buffer = (char*)calloc(12, 200);
+	buffer = (char*)calloc(200, sizeof(char*));
 	strcpy(buffer, "= COMMAND ===================================================================================================================================");
 	PrintOnMiddle(buffer, termSize.y - 4);
 	free(buffer);
-	buffer = (char*)calloc(200, 4);
+	buffer = (char*)calloc(2, sizeof(char*));
 	strcpy(buffer, "|");
 	for (int i = 1; i < termSize.y - 1; i++) {
 		PrintOnCor(buffer, termSize.x - 59, i);
 	}
 	free(buffer);
-	buffer = (char*)calloc(4, strlen("Schedule"));
+	buffer = (char*)calloc(strlen("Schedule"),sizeof(char*));
 	strcpy(buffer, "Schedule");
 	PrintOnCor(buffer, termSize.x - 56, 2);
 	free(buffer);
-	buffer = (char*)calloc(10, strlen("= Help ============================================"));
+	buffer = (char*)calloc(strlen("= Help ============================================"), sizeof(char*));
 	strcpy(buffer, "= Help ============================================");
 	PrintOnCor(buffer, termSize.x - 57, 30);
 	free(buffer);
 }
 
-void ViewSchedule(){
-
-	
+void ViewSchedule(Day pointingDay){
+	char* buffer;
+	buffer = (char*)calloc(5, sizeof(char*));
+	if (ScheduleData != NULL)
+		itoa(ScheduleData[0].year, buffer, 10);
+	else strcpy(buffer, "NULL");
+	PrintOnCor(buffer, termSize.x - 56, 4);
 }
 
 void ViewHelp() {
 	char* buffer;
-	buffer = (char*)calloc(0, strlen(":q : exit"));
+	buffer = (char*)calloc(strlen(":q : exit"), sizeof(char*));
 	strcpy(buffer, ":q : exit");
 	PrintOnCor(buffer, termSize.x - 56, 32);
 	free(buffer);

@@ -150,6 +150,9 @@
     <ClInclude Include="Schedule.h" />
     <ClInclude Include="Screen.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Database.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

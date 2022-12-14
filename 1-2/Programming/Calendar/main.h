@@ -1,5 +1,6 @@
 #pragma once
 #include <Windows.h>
+#include "Schedule.h"
 typedef struct DayStructure {
 	int year;			//year
 	int month;			//month
@@ -10,7 +11,7 @@ typedef struct DayStructure {
 	int startWDay;		//which day in a week(first of this month) || sunday:
 }Day;
 
-extern Day PointingDay;
+extern Day mainDay;
 extern HANDLE consoleHandle;
 extern CONSOLE_SCREEN_BUFFER_INFO csbi;
 

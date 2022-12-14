@@ -6,7 +6,6 @@ Day CalcDay(Day dayToCalculate) {
 	dayToCalculate.leapYear = IsLeapYear(dayToCalculate.year);
 	dayToCalculate.maxDate = CalculateMaxDate(dayToCalculate);
 	dayToCalculate.startWDay = CalculateStartWDay(dayToCalculate);
-	dayToCalculate.schedule = GetSchedule(dayToCalculate);
 	return dayToCalculate;
 }
 

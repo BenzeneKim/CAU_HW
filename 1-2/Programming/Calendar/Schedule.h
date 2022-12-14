@@ -2,10 +2,12 @@
 #include "main.h"
 
 typedef struct scheduleStruct {
-	Day pointingDay;
-	struct	tm time;
-	char* contents;
+	int year;
+	int month;
+	int date;
+	int hour;
+	int minute;
+	char contents[500];
 } Schedule;
-
-char* GetSchedule(Day pointingDay);
-void SaveSchedule(Day pointingDay, char* inputSchedule);
+void GetSchedule(Schedule scheduleArr[]);
+void eraseStrFL(char* targetS, int times);
