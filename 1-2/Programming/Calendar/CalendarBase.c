@@ -81,7 +81,8 @@ int CalculateStartWDay(Day pointingDay) {
 	for (int i = 0; i < pointingDay.month - 1; i++) {
 		sumDays += months[i];
 	}
-	sumDays--;
+	if ((pointingDay.month >= 3) && IsLeapYear(pointingDay.year) == 1) sumDays += index;
+	else sumDays += index-1;
 
 	return sumDays % 7;
 }

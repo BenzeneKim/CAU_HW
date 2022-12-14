@@ -7,8 +7,7 @@ typedef struct DayStructure {
 	int wDay;			//which day in a week(this day) || sunday:0
 	int leapYear;		//0:normal 1:leap
 	int maxDate;		//28~31
-	int startWDay;		//which day in a week(first of this month) || sunday:0
-	char* schedule;
+	int startWDay;		//which day in a week(first of this month) || sunday:
 }Day;
 
 extern Day PointingDay;

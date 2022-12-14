@@ -23,9 +23,9 @@ void View(Day ViewDay) {
 }
 
 void ViewInit() {
+	SetConsoleTextAttribute(consoleHandle, 0x000f); //color reset
 	system("cls");
 	GetSize();
-	SetConsoleTextAttribute(consoleHandle, FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN); //color reset
 }
 
 void ViewTitle(Day pointingDay) {
