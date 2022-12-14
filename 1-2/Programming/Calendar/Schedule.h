@@ -3,6 +3,7 @@
 
 typedef struct scheduleStruct {
 	Day pointingDay;
+	struct	tm time;
 	char* contents;
 } Schedule;
 
